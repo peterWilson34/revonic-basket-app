@@ -1,0 +1,42 @@
+/*----------- Variables -----------------*/
+
+$primary: #000066;
+$grey: #b2b1b1;
+$dark: #141111;
+$dark-grey: #666666;
+
+/*----------- Break Points -----------------*/
+$xs: 480px;
+$sm: 768px;
+$md: 991px;
+$lg: 1200px; 
+
+/*----------- Parent Classes -----------------*/
+
+.gradient-bg{
+    background: -webkit-linear-gradient(legacy-direction(to bottom), #fbfbfb,#dadada);
+    background: linear-gradient(to bottom,  #fbfbfb 0%,#dadada 100%);
+}
+
+/*----------- Mixins -----------------*/
+
+@mixin xs {
+    @media screen and (min-width:$xs){
+        @content;
+    }
+}
+@mixin sm {
+    @media screen and (min-width:$sm){
+        @content;
+    }
+}
+@mixin md {
+    @media screen and (min-width:$md){
+        @content;
+    }
+}
+@mixin lg {
+    @media screen and (min-width:$lg){
+        @content;
+    }
+}

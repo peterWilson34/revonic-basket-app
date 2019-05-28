@@ -1,0 +1,16 @@
+
+// Font-awesome
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+
+//loading partials
+@import "./scss/normalize";
+@import "./scss/base";
+@import "./scss/general";
+@import "./scss/header";
+@import "./scss/footer";
+
+
+//loading components
+@import "./components/basket";

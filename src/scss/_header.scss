@@ -1,0 +1,8 @@
+header{
+    background-color: $dark;
+    padding: 25px;
+    border-bottom: 1px solid $grey; 
+    @include sm{
+        padding: 50px;
+    }
+}

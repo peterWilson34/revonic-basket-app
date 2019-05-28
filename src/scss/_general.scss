@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @extend .gradient-bg;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+button.blue{
+    background-color: $primary;
+    border:0;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.text-right{
+    text-align: right;
+}
+/*----------------- Grid ------------*/
+
+.row{
+    padding: 15px;
+    display: flex;
+    &--center{
+        justify-content: center;
+    }
+    .col-6{
+        @include md{
+            width: 50%;
+        }
+
+    }
+}
