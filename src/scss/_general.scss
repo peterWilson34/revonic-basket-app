@@ -4,9 +4,14 @@
 
 body{
     @extend .gradient-bg;
-    min-height: 100vh;
     overflow-x: hidden;
     font-family: droid-serif;
+    main{
+        min-height: calc(100vh - 157px); //substracting header and footer heights
+        @include sm{
+            min-height: calc(100vh - 208px); //substracting header and footer heights
+        }
+    }
 }
 button.blue{
     background-color: $primary;
