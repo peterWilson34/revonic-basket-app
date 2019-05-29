@@ -20,37 +20,65 @@
         table{
             width: 100%;
             border-collapse: collapse;
-            th{
-                border-bottom: 2px solid $grey;
-            }
-            td{
-                padding: 16px;
-                input{
-                    width: 45px;
-                }
-                &.qty{
-                    min-width: 130px;
-                }
-                
-            }
-            .light{
-                color: $dark-grey;
-            }
-            .td-no-padding{
-                td{
-                    padding: 0 16px;
-                }           
-            }
             tr{
+                &.light{
+                    color: $dark-grey;
+                }
+                &.td-no-padding{
+                    td{
+                        padding: 0 16px;
+                    }           
+                }
                 &:nth-child(2){
                     td{
-                        background-color: $grey;
+                        background-color: $light-grey;
                     }
                 }
+                th{
+                    border-bottom: 2px solid $grey;
+                }
+                td{
+                    padding: 16px;
+                    font-size: 18px;
+                    input{
+                        width: 45px;
+                    }
+                    &.qty{
+                        min-width: 130px;
+                        display: flex;
+                        .btns{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 3px;
+                            button{
+                                width: 16px;
+                                height: 16px;
+                                font-size: 12px;
+                                text-align: center;
+                                padding: 0;
+                                border:0;
+                                border-radius: 0;
+                                background-color: $md-grey;
+                                color: #fff;
+                                &:first-child{
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                    }
+                    &.actions{
+                        background-color: transparent;
+                        width: 40px;
+                    }
+                    
+                }
+                
             }
         }
         .buy{
             cursor: pointer;
+            margin-right: 40px;
+            font-family: droid-sans;
             &[disabled]{
                 opacity: 0.7;
                 cursor: not-allowed;

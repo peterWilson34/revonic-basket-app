@@ -16,13 +16,15 @@ export default class Basket{
                 <td><span class="currency">${currency}</span><span class="price">${this.items[i].price}</span></td>
                 <td class="qty">
                     <input type="number" class="qty" value="${this.items[i].qty}">
-                    <button class="add">+</button>
-                    <button class="sub">-</button>                        
+                    <div class="btns">
+                        <button class="add">+</button>
+                        <button class="sub">-</button>                        
+                    </div>
                 </td>
                 <td>
                     <span class="currency">${currency}</span><span class="cost">${cost}</span>
                 </td>
-                <td><i class="fas fa-trash-alt delete"></i></td>
+                <td class="actions"><i class="fas fa-trash-alt delete"></i></td>
             </tr>
             
            `)

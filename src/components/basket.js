@@ -10,6 +10,12 @@ fetch('assets/data.json').then((res)=>{
             $("body").on("change","input.qty",(e)=>{
                 let index = $(e.target).closest("tr").attr("id");
                 let val = $(e.target).val();
+                if(parseInt(val)<0 ){
+                    val = 0;
+                }
+                else if(parseInt(val)>10){
+                    val = 10;
+                }
                 
                 products[index].qty= val;
                 basket.setItems(products);

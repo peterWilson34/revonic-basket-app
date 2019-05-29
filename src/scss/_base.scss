@@ -1,10 +1,34 @@
+/*----------- Typography -----------------*/
+@font-face{
+    font-family: "droid-sans";
+    src: url('./../assets/fonts/DroidSans-Regular.ttf');
+    font-weight: normal;
+}
+@font-face{
+    font-family: "droid-sans";
+    src: url('./../assets/fonts/DroidSans-Bold.ttf');
+    font-weight: bold;
+}
+@font-face{
+    font-family: "droid-serif";
+    src: url('./../assets/fonts/DroidSerif-Regular.ttf');
+    font-weight: normal;
+}
+@font-face{
+    font-family: "droid-serif";
+    src: url('./../assets/fonts/DroidSerif-Regular.ttf');
+    font-weight: bold;
+}
+
+
 /*----------- Variables -----------------*/
 
 $primary: #000066;
 $grey: #b2b1b1;
 $dark: #141111;
 $dark-grey: #666666;
-
+$md-grey:#999999;
+$light-grey:#dddddd;
 /*----------- Break Points -----------------*/
 $xs: 480px;
 $sm: 768px;
